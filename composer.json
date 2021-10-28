@@ -1,0 +1,38 @@
+{
+    "name": "sidz/foxitesign-client",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oleg Zhulnev",
+            "email": "plbsid@gmail.com",
+            "homepage": "https://github.com/sidz"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^7",
+        "kamermans/guzzle-oauth2-subscriber": "^1.0",
+        "psr/log": "^1 || ^2 || ^3",
+        "symfony/serializer": "^4.4 || ^5.0 || ^6.0",
+        "webmozart/assert": "^1.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "FoxitESign\\" : "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FoxitESign\\Tests\\Unit\\": "tests/Unit"
+        }
+    }
+}
